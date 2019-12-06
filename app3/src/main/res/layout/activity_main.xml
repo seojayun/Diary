@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+    <DatePicker
+        android:id="@+id/dPicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"/>
+
+    <EditText
+        android:id="@+id/edtDiary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/diarybg"
+
+        android:gravity="top|left"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:lines="8"/>
+<!--   1.android:lines 에디트 텍스트의 라인수를 결정     -->
+<!-- 2.android:background="@drawable/diarybg"백그라운드에 색상 대신 이미지를 삽입하였다.-->
+<!--자바로 이동-->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"
+        android:text="새로저장"/>
+
+</LinearLayout>
